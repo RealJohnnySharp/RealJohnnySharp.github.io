@@ -1,0 +1,53 @@
+@import 'split';
+
+.profile {
+  &.split {
+    background-image: url('../Images/profile-bg-200.svg');
+    background-size: cover;
+  }
+
+  .left {
+    color: #e7e5e8;
+  }
+
+  .right {
+    text-align: center;
+
+    h2, p {
+      padding: 30px;
+
+      &.wrap {
+        margin: revert;
+      }
+    }
+
+    p {
+      a {
+        color: #004989;
+      }
+    }
+  }
+
+  .wrapper {
+    margin-top: 25%;
+    text-align: center;
+    font-weight: 100;
+  }
+
+  img.headshot {
+    width: 25%;
+    opacity: .55;
+    border-radius: 50%;
+    border: 2px solid hsla(0,0%,93%,.42);
+    margin: 0 auto;
+    display: block;
+  }
+
+  img.header-image {
+    height: auto;
+    max-height: 30%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}

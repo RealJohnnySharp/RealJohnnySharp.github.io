@@ -1,0 +1,33 @@
+.split {
+  height: 100vh;
+
+  .left {
+    box-sizing: border-box;
+    width: 40%;
+    float: left;
+    height: 100%;
+  }
+
+  .right {
+    box-sizing: border-box;
+    width: 60%;
+    float: right;
+    height: 100%;
+
+    &.light {
+      background: hsla(0, 0%, 100%, .9);
+    }
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .split {
+    .left, .right {
+      width: 100%;
+    }
+  }
+}

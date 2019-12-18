@@ -1,8 +1,16 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #5a5a5a;
   text-align: center;
 }
 
-.App-logo {
+a:any-link {
+  text-decoration: none;
+}
+
+.logo-image {
   height: 40vmin;
 }
 
@@ -15,8 +23,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #09d3ac;
 }

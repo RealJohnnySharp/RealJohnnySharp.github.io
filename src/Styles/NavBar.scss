@@ -1,0 +1,160 @@
+.navigation {
+  color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 10;
+
+  .nav-paper {
+    background-color: inherit;
+
+    &-left-docked {
+      border: none;
+    }
+  }
+
+  .nav-list {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .nav-item {
+    &.gutters {
+      padding: 12px;
+    }
+
+    &.active, &:hover {
+      background-color: initial !important;
+
+      .nav-icon {
+        opacity: 1;
+      }
+    }
+
+    .nav-icon {
+      opacity: .5;
+      min-width: inherit;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.mobile-nav-button {
+  background-color: #000 !important;
+  position: fixed !important;
+  top: 5px;
+  right: 5px;
+  z-index: 100;
+}
+
+.mobile-nav {
+  color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  z-index: 10;
+
+  .nav-paper {
+    background-color: inherit;
+
+    &-left-docked {
+      border: none;
+    }
+  }
+
+  .nav-list {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .nav-item {
+    &.gutters {
+      padding: 12px;
+    }
+
+    &.active, &:hover {
+      background-color: initial !important;
+
+      .nav-icon {
+        opacity: 1;
+      }
+    }
+
+    .nav-icon {
+      opacity: .5;
+      min-width: inherit;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.contact-background {
+  // position: absolute;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  background: hsla(0, 0%, 100%, .6);
+  // z-index: 1;
+}
+
+.contact-navigation {
+  background-color: transparent !important;
+  z-index: 15;
+  animation: controls-bounce 0.3s linear;
+
+  .nav-list {
+    background: rgba(0,0,0,.8) !important;
+    border-radius: 5px;
+    display: flex;
+    padding: 0;
+    margin-left: 10px;
+
+    &::after {
+      content: "";
+      border: solid transparent;
+      right: 100%;
+      position: absolute;
+      top: 50%;
+      pointer-events: none;
+      border-right-color: rgba(0,0,0,.8);
+      border-width: 10px;
+      margin-top: -10px;
+    }
+  }
+
+  .nav-item {
+    &.gutters {
+      padding: 12px;
+    }
+
+    &.active, &:hover {
+      background-color: initial !important;
+
+      .nav-icon {
+        opacity: 1;
+      }
+    }
+
+    .nav-icon {
+      opacity: .5;
+      min-width: inherit;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.tooltip-right {
+  margin: 0 !important;
+}

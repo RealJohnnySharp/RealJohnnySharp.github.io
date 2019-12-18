@@ -1,0 +1,63 @@
+@import 'split';
+
+.resume {
+  a {
+    &.pdf {
+      padding: 10px 15px;
+      border: 1px solid;
+      border-radius: 5px;
+
+      img, svg {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .resume-display {
+    display: block;
+    margin: 5% 2%;
+    height: 90%;
+
+    canvas {
+      display: initial !important;
+    }
+  }
+
+  h1 {
+    margin-bottom: 2em;
+  }
+
+  img {
+    &.resume-image {
+      display: block;
+      margin: 5% auto;
+      height: 90%;
+    }
+  }
+
+  &.split {
+    background-image: url('../Images/profile-bg-200.svg');
+    background-size: cover;
+
+    .right {
+      &.light {
+        background: transparent;
+      }
+    }
+  }
+
+  .left {
+    color: #fff;
+  }
+
+  .pdf {
+    color: #fff;
+    vertical-align: top;
+  }
+
+  .wrapper {
+    margin-top: 25%;
+    text-align: center;
+    font-weight: 100;
+  }
+}
