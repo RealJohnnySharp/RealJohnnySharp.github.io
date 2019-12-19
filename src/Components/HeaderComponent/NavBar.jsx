@@ -90,37 +90,45 @@ class NavBar extends Component {
 					tooltip="Projects"
 					tooltipPlacement="right"
 				/>
-				<ArrowTooltip
+				<NavItem
+					to="/photos"
+					icon={<PhotoCameraOutlined color={this.iconColor} />}
+					selected={this.state.selectedIndex === 4}
+					tooltip="Photos"
+					tooltipPlacement="right"
+				/>
+				{/* <ArrowTooltip
 					interactive
 					title="Photos"
 					placement="right"
-				>
+					>
 					<ListItem
 						button
 						key="Photos"
 						className="nav-item"
 						classes={{
-							gutters: 'gutters',
-							selected: 'active'
+					gutters: 'gutters',
+					selected: 'active'
 						}}
 						selected={this.state.selectedIndex === 4}
 					>
 						<Link
-							target="_self"
-							// href="https://api.instagram.com/oauth/authorize?app_id=525651974946438&redirect_uri=https%3A%2F%2Fjohnnycsharp.com%2Fphotos&scope=user_profile,user_media&response_type=code"
-							// href="https://api.instagram.com/oauth/authorize/?client_id=1418891a59324d32aaf52df34acac0c2&redirect_uri=http://localhost:3000/photos&response_type=code"
-							href="https://api.instagram.com/oauth/authorize/?client_id=1418891a59324d32aaf52df34acac0c2&redirect_uri=http://localhost:3000/photos&response_type=token"
+					target="_self"
+					// href="https://api.instagram.com/oauth/authorize?app_id=525651974946438&redirect_uri=https%3A%2F%2Fjohnnycsharp.com%2Fphotos&scope=user_profile,user_media&response_type=code"
+					// href="https://api.instagram.com/oauth/authorize/?client_id=1418891a59324d32aaf52df34acac0c2&redirect_uri=http://localhost:3000/photos&response_type=code"
+					// href="https://api.instagram.com/oauth/authorize/?client_id=1418891a59324d32aaf52df34acac0c2&redirect_uri=http://localhost:3000/photos&response_type=token"
+					href="https://api.instagram.com/oauth/authorize/?client_id=1418891a59324d32aaf52df34acac0c2&redirect_uri=http://test.johnnycsharp.com/photos&response_type=token"
 						>
-							<ListItemIcon
-								classes={{
-									root: 'nav-icon'
-								}}
-							>
-								<PhotoCameraOutlined color={this.iconColor} />
-							</ListItemIcon>
+					<ListItemIcon
+					classes={{
+					root: 'nav-icon'
+					}}
+					>
+					<PhotoCameraOutlined color={this.iconColor} />
+					</ListItemIcon>
 						</Link>
 					</ListItem>
-				</ArrowTooltip>
+				</ArrowTooltip> */}
 				<ArrowTooltip
 					interactive
 					title="Contact"
