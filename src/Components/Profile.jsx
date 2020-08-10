@@ -12,7 +12,7 @@ import '../Styles/Profile.scss';
 
 class Profile extends Component {
 	render() {
-	  return (
+		return (
 			<>
 				<div className="profile split">
 					<div className="left">
@@ -51,7 +51,7 @@ class Profile extends Component {
 					</div>
 				</div>
 			</>
-	  )
+		)
 	}
 }
 

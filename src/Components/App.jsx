@@ -55,11 +55,11 @@ const theme = createMuiTheme({
 			}
 		},
 	},
-  palette: {
+	palette: {
 		// type: prefersDarkMode ? 'dark' : 'light',
-    primary: { main: grey[50] },
-    secondary: { main: grey[800] },
-  },
+		primary: { main: grey[50] },
+		secondary: { main: grey[800] },
+	},
 });
 
 const routes = [
@@ -98,11 +98,11 @@ const routes = [
 
 class App extends Component {
 	render() {
-	  return (
+		return (
 			<ThemeProvider theme={theme}>
 				<Router>
 					<Switch>
-            {routes.map((route, index) => (
+						{routes.map((route, index) => (
 							<Route
 								key={index}
 								name={route.name}
@@ -110,11 +110,11 @@ class App extends Component {
 								exact={route.exact}
 								children={route.nav}
 							/>
-            ))}
-          </Switch>
+						))}
+					</Switch>
 
 					<Switch>
-            {routes.map((route, index) => (
+						{routes.map((route, index) => (
 							<Route
 								key={index}
 								name={route.name}
@@ -122,12 +122,12 @@ class App extends Component {
 								exact={route.exact}
 								component={route.component}
 							/>
-            ))}
-          </Switch>
+						))}
+					</Switch>
 					{/* <Footer /> */}
 				</Router>
 			</ThemeProvider>
-	  );
+		);
 	}
 }
 

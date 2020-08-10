@@ -30,9 +30,9 @@ function NavPopover(props) {
 
 	const handlePopoverClose = () => {
 		onClose();
-  };
+	};
 
-  return (
+	return (
 		<Popover
 			id='contact-popover'
 			classes={{
@@ -91,7 +91,7 @@ function NavPopover(props) {
 				/>
 			</List>
 		</Popover>
-  );
+	);
 }
 
 NavPopover.defaultProps = {
@@ -102,7 +102,7 @@ NavPopover.propTypes = {
 	anchorEl: PropTypes.any,
 	anchorOrigin: PropTypes.object.isRequired,
 	elevation: PropTypes.number,
-  onClose: PropTypes.func.isRequired,
+	onClose: PropTypes.func.isRequired,
 	transformOrigin: PropTypes.object.isRequired,
 };
 

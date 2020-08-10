@@ -20,7 +20,7 @@ import '../Styles/Projects.scss';
 
 class Projects extends Component {
 	render() {
-	  return (
+		return (
 			<>
 				<div className="projects split">
 					<div className="left">
@@ -35,7 +35,7 @@ class Projects extends Component {
 					</div>
 				</div>
 			</>
-	  )
+		)
 	}
 }
 

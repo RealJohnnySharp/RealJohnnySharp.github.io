@@ -6,7 +6,7 @@ import {
 	Fab,
 	Hidden,
 	// IconButton,
-	Link,
+	// Link,
 	List,
 	ListItem,
 	ListItemIcon,
@@ -34,8 +34,8 @@ import ArrowTooltip from '../ArrowTooltip';
 import '../../Styles/NavBar.scss';
 
 class NavBar extends Component {
-  constructor(props) {
-    super(props);
+	constructor(props) {
+		super(props);
 
 		this.iconColor = 'primary';
 
@@ -47,7 +47,7 @@ class NavBar extends Component {
 		this.handlePopoverClose = this.handlePopoverClose.bind(this);
 		this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
 
-    this.state = {
+		this.state = {
 			selectedIndex: props.index,
 			anchorEl: null,
 			mobileOpen: false,
@@ -156,11 +156,11 @@ class NavBar extends Component {
 				</ArrowTooltip>
 			</List>
 		);
-  }
+	}
 
 	handleDrawerToggle() {
 		this.setState(state => ({ mobileOpen: !state.mobileOpen }));
-  };
+	};
 
 	handlePopoverClick(event) {
 		const target = event.currentTarget;
@@ -171,7 +171,7 @@ class NavBar extends Component {
 		this.setState(state => ({ anchorEl: null }));
 	}
 
-  render() {
+	render() {
 		return (
 			<>
 				<Hidden smUp>
@@ -245,7 +245,7 @@ class NavBar extends Component {
 				</Hidden>
 			</>
 		)
-  }
+	}
 }
 
 export default NavBar;

@@ -55,7 +55,7 @@ class Projects extends Component {
 
 	render() {
 		const { pageNumber, numPages } = this.state;
-	  return (
+		return (
 			<>
 				<div className="resume split">
 					<div className="left">
@@ -112,7 +112,7 @@ class Projects extends Component {
 					</Hidden>
 				</div>
 			</>
-	  )
+		)
 	}
 }
 

@@ -34,7 +34,7 @@ class Projects extends Component {
 	}
 
 	async componentDidMount() {
-	// componentDidMount() {
+		// componentDidMount() {
 		let urlParams = queryString.parse(window.location.hash);
 
 		// Get access token
@@ -84,8 +84,7 @@ class Projects extends Component {
 			data = data.filter(image => image.tags.includes("showcase"));
 			// console.log(data);
 			this.setState({ images: data });
-		})
-		.catch(error => {
+		}).catch(error => {
 			console.log(`Axios request failed: ${error}`);
 			console.log(error.toJSON());
 		});
@@ -95,7 +94,7 @@ class Projects extends Component {
 	}
 
 	render() {
-	  return (
+		return (
 			<>
 				<div className="photos">
 					<div className="tag-title">
@@ -140,7 +139,7 @@ class Projects extends Component {
 					</Grid>
 				</div>
 			</>
-	  )
+		)
 	}
 }
 

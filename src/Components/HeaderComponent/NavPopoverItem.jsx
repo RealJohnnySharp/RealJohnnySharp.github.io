@@ -15,7 +15,7 @@ import '../../Styles/NavBar.scss';
 function NavPopoverItem(props) {
 	const { icon, to, tooltip, tooltipPlacement } = props;
 
-  return (
+	return (
 		<ArrowTooltip
 			interactive
 			title={tooltip}
@@ -42,7 +42,7 @@ function NavPopoverItem(props) {
 				</ListItemIcon>
 			</ListItem>
 		</ArrowTooltip>
-  );
+	);
 }
 
 NavPopoverItem.defaultProps = {
@@ -50,8 +50,8 @@ NavPopoverItem.defaultProps = {
 }
 
 NavPopoverItem.propTypes = {
-  icon: PropTypes.element.isRequired,
-  to: PropTypes.string.isRequired,
+	icon: PropTypes.element.isRequired,
+	to: PropTypes.string.isRequired,
 	tooltip: PropTypes.string.isRequired,
 	tooltipPlacement: PropTypes.string.isRequired,
 };

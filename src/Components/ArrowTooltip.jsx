@@ -61,10 +61,10 @@ const useStylesArrow = makeStyles(theme => ({
   tooltip: {
     position: 'relative',
   },
-	// tooltipPlacementLeft: 'tooltip-left',
-	tooltipPlacementRight: {
-		margin: 0,
-	},
+  // tooltipPlacementLeft: 'tooltip-left',
+  tooltipPlacementRight: {
+    margin: 0,
+  },
   arrow: {
     position: 'absolute',
     fontSize: 6,
@@ -102,7 +102,7 @@ function ArrowTooltip(props) {
         <>
           {props.title}
           <span className={arrow} ref={setArrowRef} />
-				</>
+        </>
       }
     />
   );

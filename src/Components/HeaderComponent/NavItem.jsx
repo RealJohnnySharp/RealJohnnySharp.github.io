@@ -19,17 +19,17 @@ import '../../Styles/NavBar.scss';
 function NavItem(props) {
 	const { icon, selected, to, tooltip, tooltipPlacement } = props;
 
-  const renderLink = React.useMemo(
-    () =>
-      React.forwardRef((itemProps, ref) => (
+	const renderLink = React.useMemo(
+		() =>
+			React.forwardRef((itemProps, ref) => (
 				// With react-router-dom@^6.0.0 use `ref` instead of `innerRef`
-        // See https://github.com/ReactTraining/react-router/issues/6056
-        <RouterLink to={to} {...itemProps} innerRef={ref} />
-      )),
-    [to],
-  );
+				// See https://github.com/ReactTraining/react-router/issues/6056
+				<RouterLink to={to} {...itemProps} innerRef={ref} />
+			)),
+		[to],
+	);
 
-  return (
+	return (
 		<ArrowTooltip
 			interactive
 			title={tooltip}
@@ -55,7 +55,7 @@ function NavItem(props) {
 				</ListItemIcon>
 			</ListItem>
 		</ArrowTooltip>
-  );
+	);
 }
 
 NavItem.defaultProps = {
@@ -63,9 +63,9 @@ NavItem.defaultProps = {
 }
 
 NavItem.propTypes = {
-  icon: PropTypes.element.isRequired,
+	icon: PropTypes.element.isRequired,
 	selected: PropTypes.bool,
-  to: PropTypes.string.isRequired,
+	to: PropTypes.string.isRequired,
 	tooltip: PropTypes.string.isRequired,
 	tooltipPlacement: PropTypes.string.isRequired,
 };

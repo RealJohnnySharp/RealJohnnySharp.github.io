@@ -17,8 +17,8 @@ import {
 import '../Styles/HomePage.scss';
 
 class HomePage extends Component {
-  render() {
-    return (
+	render() {
+		return (
 			<>
 				<div className="welcome normal-dark">
 					<div className="wrapper">
@@ -97,8 +97,8 @@ class HomePage extends Component {
 					</div>
 				</div>
 			</>
-    )
-  }
+		)
+	}
 }
 
 export default HomePage;
