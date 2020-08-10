@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense, lazy } from 'react';
 // import logo from './logo.svg';
 
 // Fontawesome Components
@@ -21,17 +21,22 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { grey } from '@material-ui/core/colors';
 
-// Import Components
-import NavBar from './HeaderComponent/NavBar';
-import HomePage from './HomePage';
-import Profile from './Profile';
-import Resume from './Resume';
-import Projects from './Projects';
-import Photos from './Photos';
-// import Footer from './FooterComponent/Footer';
-
 // Style
 import '../Styles/App.scss';
+
+// Import Components
+import NavBar from './HeaderComponent/NavBar';
+// import HomePage from './HomePage';
+// import Profile from './Profile';
+// import Resume from './Resume';
+// import Projects from './Projects';
+// import Photos from './Photos';
+const HomePage = lazy(() => import('./HomePage'));
+const Profile = lazy(() => import('./Profile'));
+const Resume = lazy(() => import('./Resume'));
+const Projects = lazy(() => import('./Projects'));
+const Photos = lazy(() => import('./Photos'));
+// import Footer from './FooterComponent/Footer';
 
 // library.add(fab, fas);
 
@@ -113,17 +118,19 @@ class App extends Component {
 						))}
 					</Switch>
 
-					<Switch>
-						{routes.map((route, index) => (
-							<Route
-								key={index}
-								name={route.name}
-								path={route.path}
-								exact={route.exact}
-								component={route.component}
-							/>
-						))}
-					</Switch>
+					<Suspense fallback={<div>Loading...</div>}>
+						<Switch>
+							{routes.map((route, index) => (
+								<Route
+									key={index}
+									name={route.name}
+									path={route.path}
+									exact={route.exact}
+									component={route.component}
+								/>
+							))}
+						</Switch>
+					</Suspense>
 					{/* <Footer /> */}
 				</Router>
 			</ThemeProvider>
