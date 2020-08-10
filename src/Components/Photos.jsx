@@ -14,13 +14,6 @@ import {
 	Typography
 } from '@material-ui/core';
 
-// Import API
-// import {
-// 	// instagramAuth,
-// 	// instagram,
-// 	instagramV1
-// } from "../utils/API";
-
 // Style
 import '../Styles/Photos.scss';
 
