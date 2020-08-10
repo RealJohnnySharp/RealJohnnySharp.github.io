@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Fonts/*';
+import './Fonts';
 import './index.scss';
 import App from './Components/App';
 import * as serviceWorker from './serviceWorker';
