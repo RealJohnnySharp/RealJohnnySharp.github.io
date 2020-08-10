@@ -44,7 +44,7 @@ class Projects extends Component {
 		// 	// client_id: "1418891a59324d32aaf52df34acac0c2",
 		// 	// client_secret: "9e25e7b5ceba4def95fffbed15e97323",
 		// 	grant_type: "authorization_code",
-		// 	// redirect_uri: "https://johnnycsharp.com/photos",
+		// 	// redirect_uri: "https://test.johnnycsharp.com/photos",
 		// 	redirect_uri: "http://localhost:3000/photos",
 		// 	code: urlParams.code
 		// }, {
