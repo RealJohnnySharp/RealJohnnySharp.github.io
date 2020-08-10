@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Fonts';
+// import './Fonts';
+import './Fonts/Roboto-Light.ttf';
+import './Fonts/Roboto-LightItalic.ttf';
+import './Fonts/Roboto-Regular.ttf';
+import './Fonts/Roboto-Bold.ttf';
+import './Fonts/Roboto-BoldItalic.ttf';
 import './index.scss';
 import App from './Components/App';
 import * as serviceWorker from './serviceWorker';
