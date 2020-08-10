@@ -1,12 +1,4 @@
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'),
-  url(../Fonts/Roboto-Light.ttf) format('truetype'),
-  url(../Fonts/Roboto-LightItalic.ttf) format('truetype'),
-  url(../Fonts/Roboto-Regular.ttf) format('truetype'),
-  url(../Fonts/Roboto-Bold.ttf) format('truetype'),
-  url(../Fonts/Roboto-BoldItalic.ttf) format('truetype');
-}
+@import '../index.scss';
 
 body {
   margin: 0;
