@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import homepageBgJPG from '../Images/homepage-bg.jpg';
+import homepageBgWebP from '../Images/homepage-bg.webp';
 
 // Router Components
 import { Link as RouterLink } from 'react-router-dom';
@@ -74,7 +76,7 @@ class HomePage extends Component {
 							<Grid item>
 								<Link
 									className="icon"
-									href="https://api.instagram.com/oauth/authorize/?client_id=1418891a59324d32aaf52df34acac0c2&redirect_uri=http://localhost:3000/photos&response_type=token"
+									href="https://api.instagram.com/oauth/authorize/?client_id=1418891a59324d32aaf52df34acac0c2&redirect_uri=http://test.johnnycsharp.com/photos&response_type=token"
 									target="_self"
 									underline="none"
 								>
