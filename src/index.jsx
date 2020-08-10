@@ -6,6 +6,7 @@ import './Fonts/Roboto-Regular.ttf';
 import './Fonts/Roboto-Bold.ttf';
 import './Fonts/Roboto-BoldItalic.ttf';
 import './index.scss';
+import './utils/modernizr-custom';
 import App from './Components/App';
 import * as serviceWorker from './serviceWorker';
 
