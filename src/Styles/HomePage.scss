@@ -1,12 +1,10 @@
 .welcome {
 
   .no-webp &, .no-js & {
-    // background-image: url('../Images/homepage-bg.jpg');
     background-image: url(../Images/homepage-bg.jpg);
   }
 
   .webp & {
-    // background-image: url('../Images/homepage-bg.webp');
     background-image: url(../Images/homepage-bg.webp);
   }
   

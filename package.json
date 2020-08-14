@@ -1,6 +1,6 @@
 {
-  "name": "test-site",
-  "version": "0.1.0",
+  "name": "personal-site-react",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",

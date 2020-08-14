@@ -26,11 +26,6 @@ import '../Styles/App.scss';
 
 // Import Components
 import NavBar from './HeaderComponent/NavBar';
-// import HomePage from './HomePage';
-// import Profile from './Profile';
-// import Resume from './Resume';
-// import Projects from './Projects';
-// import Photos from './Photos';
 const HomePage = lazy(() => import('./HomePage'));
 const Profile = lazy(() => import('./Profile'));
 const Resume = lazy(() => import('./Resume'));
