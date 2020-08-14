@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import homepageBgJPG from '../Images/homepage-bg.jpg';
-import homepageBgWebP from '../Images/homepage-bg.webp';
 
 // Router Components
 import { Link as RouterLink } from 'react-router-dom';
